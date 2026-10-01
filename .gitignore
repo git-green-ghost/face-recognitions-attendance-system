@@ -1,0 +1,93 @@
+# ==============================================================================
+# FaceAttendance - Production .gitignore
+# ==============================================================================
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Local Runtime & Databases (Never commit live user data or student databases)
+.runtime/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Biometric face images & trained models (Preserve directory structure via .gitkeep)
+data/*
+!data/backups/
+!data/backups/.gitkeep
+!data/dataset/
+!data/dataset/.gitkeep
+!data/exports/
+!data/exports/.gitkeep
+!data/photos/
+!data/photos/.gitkeep
+!data/students/
+!data/students/.gitkeep
+!data/trainer/
+!data/trainer/.gitkeep
+
+# Trained face recognition weights
+*.npz
+
+# Logs and Audit Dumps
+logs/
+*.log
+
+# Temporary Exports & Shareable Archives
+FaceAttendance_shareable/
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Operating System Artifacts
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Local AI / Agent metadata
+.agents/
+.codex/
